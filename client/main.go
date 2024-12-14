@@ -1,7 +1,7 @@
 package main
 
 import (
-	//"client/original"
+	// "client/original"
 	"client/server"
 )
 
@@ -12,6 +12,9 @@ func main() {
 	pairs := []string{"BTCUSDT", "ETHUSDT", "BNBUSDT", "XRPUSDT"}
 	timeoutSec := 30
 
-	//go original.Init(pairs, true, timeoutSec)
+	// uncomment this line and the import statement to run the original client
+	
+	// go original.Init(pairs, true, timeoutSec)
+
 	server.Init(pairs, true, timeoutSec)
 }

@@ -7,7 +7,7 @@ import (
 )
 
 var pairs = []string{"BTCUSDT", "ETHUSDT", "BNBUSDT", "ADAUSDT", "XRPUSDT"}
-const timeoutBenchmark = 30
+const timeoutBenchmark = 10
 
 // run with go test -bench=.
 func BenchmarkOriginalInit(b *testing.B) {
