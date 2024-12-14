@@ -14,7 +14,6 @@ type AvailableTokenList struct {
 }
 
 func NewAvailableTokenList(_tokens []fapi.FetchedToken) *AvailableTokenList {
-	
 	list := AvailableTokenList{tokens: _tokens, mp: make(map[string]bool), mu: sync.Mutex{}, Websockets: connection.NewWebSockets()}
 	for _, token := range list.tokens {
 		list.mp[token.Symbol] = true
